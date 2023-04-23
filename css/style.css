@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 @font-face {
     font-family: "F1Regular";
     src: url(../media/fonts/Formula1-Regular.ttf);
@@ -11,31 +16,41 @@
 .F1Titulo {
     font-family: "F1Bold";
     text-align: center;
+    background-image: linear-gradient(#000000, #110000);
+    color: white;
+}
+nav{
+    margin-left: 10px;
 }
 
+nav a{
+    background-color: #000000;
+}
+body{
+    background-color: #000000;
+}
 .TituloPrincipal {
-    text-align: center;
     font-size: 300%;
     margin: 4px;
+    justify-content: space-around;
 }
 
 .Titulo2 {
-    text-align: center;
     font: 200%;
     margin: 4px 10px 10px 10px;
     text-decoration: underline;
+    justify-content: space-around;
 }
 
 .TituloSecundario {
     text-align: center;
 }
 
-li {
-    display: inline-block;
+li{
+    list-style: square;
 }
 
 .Menu {
-    list-style: circle;
     margin: 20px;
 }
 
@@ -52,10 +67,15 @@ li {
     bottom: 0px;
     position: fixed;
     display: block;
+    width: 100%;
+    padding-left: 100px;
 }
 
 main {
     margin-bottom: 100px;
+    background-image: linear-gradient(#110000, #000000);
+    display: flex;
+    justify-content: space-around;
 }
 
 .footertext {
@@ -133,29 +153,36 @@ h4 {
 }
 
 .Noticias {
-    display: inline-block;
     height: 400px;
-    width: 420px;
+    width: 425px;
     padding: 5px;
     border: solid;
     border-color: #a6051a;
     border-width: 10px;
     overflow: scroll;
-
+    color: white;
+    margin-bottom: 20px;
 }
 
-.Encuesta{
+
+.Encuesta {
     font-family: "F1Regular";
 }
 
-.VerVerstappen{
-    width: 150px;
+.VerVerstappen {
+    width: 200px;
 }
 
-.FotoVers{
+.FotoVers {
     background-image: url(../media/images/MaxVerstappen.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     background-size: 70%;
+}
+
+.Mobile-Last {
+    max-width: 425px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
