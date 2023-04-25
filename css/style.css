@@ -104,28 +104,43 @@ h4 {
     margin: 5px 5px 5px 10px;
 }
 
+.Tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    .mobile-first {
+        flex-direction: row;
+    }
+
+}
+
+.FijoTarjeta{
+    border-radius: 20%;
+    border-width: 15px;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
 .Verstappen {
     background-color: #12142d;
     color: #FFEA00;
     border: solid #ff0026;
-    border-width: 5px;
-    display: inline-block;
 }
 
 .Hamilton {
     background-color: #c6c6c6;
     color: #111111;
     border: solid #00a19c;
-    border-width: 5px;
-    display: inline-block;
 }
 
 .LeClerc {
     background-color: #a6051a;
     color: #FFEB00;
     border: solid #111111;
-    border-width: 5px;
-    display: inline-block;
 }
 
 .ParrafoHistoria {
@@ -141,6 +156,7 @@ h4 {
 .acordion-letra {
     color: black;
 }
+
 
 
 .contacto {
