@@ -19,17 +19,20 @@
     background-image: linear-gradient(#000000, #110000);
     color: white;
 }
-nav{
+
+nav {
     margin-left: 10px;
 }
 
-nav a{
+nav a {
     background-color: #000000;
 }
-body{
+
+body {
     background-color: #000000;
     color: white;
 }
+
 .TituloPrincipal {
     font-size: 300%;
     margin: 4px;
@@ -49,13 +52,14 @@ body{
     padding: 20px;
 }
 
-li{
+li {
     list-style: none;
 }
-li a{
+
+li a {
     color: white;
     text-decoration: none;
-    
+
 }
 
 .Menu {
@@ -71,13 +75,10 @@ li a{
     background-color: black;
     color: white;
     font-family: "F1Bold";
-    text-align: center;
     bottom: 0px;
     position: fixed;
-    display: block;
     width: 100%;
-    padding-left: 100px;
-   
+
 }
 
 main {
@@ -85,9 +86,13 @@ main {
     background-image: linear-gradient(#110000, #000000);
 }
 
+.LetraBlanca {
+    color: white;
+}
 
 .footertext {
     margin: 15px;
+    width: 25%;
 }
 
 h3 {
@@ -104,7 +109,7 @@ h4 {
     margin: 5px 5px 5px 10px;
 }
 
-.Tarjetas{
+.Tarjetas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,13 +123,14 @@ h4 {
 
 }
 
-.FijoTarjeta{
+.FijoTarjeta {
     border-radius: 20%;
     border-width: 15px;
     display: inline-block;
     margin: 5px;
     text-align: center;
 }
+
 .Verstappen {
     background-color: #12142d;
     color: #FFEA00;
@@ -143,9 +149,9 @@ h4 {
     border: solid #111111;
 }
 
-.ParrafoHistoria {
+.ParrafoNoticia {
     margin: 5px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -153,11 +159,35 @@ h4 {
     text-decoration: underline;
     font-weight: bold;
 }
+
 .acordion-letra {
     color: black;
 }
 
-
+.Carreras{
+    display: flex;
+    flex-direction: row;
+}
+.VideosCarreras {
+    width: 319px;
+    height: 180px;
+}
+@media (min-width: 426px) {
+    .Mobile-First-Videos {
+        width: 750px;
+        height: 500px;
+    }
+}
+@media (min-width: 426px) {
+    .Mobile-First-Texto {
+        text-align: left;
+    }
+}
+@media (max-width: 425px) {
+    .Mobile-First-Texto {
+        text-align: center;
+    }
+}
 
 .contacto {
     font-family: "F1Bold";
@@ -165,8 +195,11 @@ h4 {
     list-style: none;
     margin: 5px;
 }
-
-.OrdenNoticias{
+.contacto:hover{
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+.OrdenNoticias {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -206,4 +239,9 @@ h4 {
     max-width: 425px;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.Carrusel{
+    width: 500px;
+    margin: auto;
 }
