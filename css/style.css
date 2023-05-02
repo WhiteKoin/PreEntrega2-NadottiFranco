@@ -21,7 +21,7 @@
 }
 
 nav {
-    margin-left: 10px;
+    margin-left: auto;
 }
 
 nav a {
@@ -56,10 +56,9 @@ li {
     list-style: none;
 }
 
-li a {
+.Menu a {
     color: white;
     text-decoration: none;
-
 }
 
 .Menu {
@@ -79,6 +78,11 @@ li a {
     position: fixed;
     width: 100%;
 
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 main {
@@ -164,29 +168,28 @@ h4 {
     color: black;
 }
 
-.Carreras{
+.Carreras {
     display: flex;
     flex-direction: row;
 }
+
 .VideosCarreras {
-    width: 319px;
-    height: 180px;
+    width: 750px;
+    height: 500px;
 }
-@media (min-width: 426px) {
+
+@media (max-width: 426px) {
     .Mobile-First-Videos {
-        width: 750px;
-        height: 500px;
+        width: 319px;
+        height: 180px;
     }
-}
-@media (min-width: 426px) {
-    .Mobile-First-Texto {
-        text-align: left;
-    }
-}
-@media (max-width: 425px) {
-    .Mobile-First-Texto {
+    .Mobile-First-Center {
         text-align: center;
     }
+}
+
+.Mobile-First-Texto {
+    text-align: left;
 }
 
 .contacto {
@@ -195,10 +198,12 @@ h4 {
     list-style: none;
     margin: 5px;
 }
-.contacto:hover{
+
+.contacto:hover {
     transform: rotateZ(360deg);
     transition: 2s;
 }
+
 .OrdenNoticias {
     display: flex;
     justify-content: center;
@@ -241,7 +246,7 @@ h4 {
     flex-wrap: wrap;
 }
 
-.Carrusel{
+.Carrusel {
     width: 500px;
     margin: auto;
 }
